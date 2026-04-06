@@ -105,7 +105,7 @@ a {
 
   background:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('telefono.png') center 75% / cover no-repeat;
+    url('img/telefono.png') center 75% / cover no-repeat;
 
   position: relative;
   display: flex;
@@ -121,15 +121,19 @@ a {
 }
 
 .hero-title { 
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem; 
+  color: white;
   letter-spacing: 2px; 
 }
 
 .hero-subtitle {
+  font-family: 'Cinzel', serif;
   font-size: 1.2rem;
-  color: var(--dorado);
+  color: #C9A45C;
   margin-top: 8px;
-  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* --- Layout principal contacto (grid 2 columnas) --- */
