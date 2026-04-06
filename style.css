@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  
 /* --- HERO --- */
 .hero {
@@ -8,7 +9,11 @@
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url('img/telefono.png') center 75% / cover no-repeat;
 
+    }
 
+
+=======
+>>>>>>> e5fd4dfd95635434f4928490864effe0501caae6
 /* ============================================================
    INTEGRANTE 7: CHRIS (Christian Escamilla)
    Branch: Christian-Hernandez
@@ -31,7 +36,11 @@
 }
 
 /* --- Reset --- */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
 
 /* --- Tipografia base --- */
 body {
@@ -41,8 +50,14 @@ body {
   line-height: 1.7;
 }
 
-h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
-a { text-decoration: none; color: inherit; }
+h1, h2, h3, h4 { 
+  font-family: 'Playfair Display', serif; 
+}
+
+a { 
+  text-decoration: none; 
+  color: inherit; 
+}
 
 /* --- Container --- */
 .container {
@@ -80,8 +95,10 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* --- Logo --- */
-.logo { height: 36px; border-radius: 4px; }
-
+.logo { 
+  height: 36px; 
+  border-radius: 4px; 
+}
 
 /* --- Navegacion --- */
 .nav a {
@@ -92,57 +109,44 @@ a { text-decoration: none; color: inherit; }
 }
 
 .nav a:hover,
-.nav a.active { color: var(--dorado); }
+.nav a.active { 
+  color: var(--dorado); 
+}
 
 /* --- Hero con overlay oscuro --- */
 .hero {
   margin-top: 60px;
   height: 40vh;
   min-height: 260px;
-  background: linear-gradient(135deg, var(--burdeos), var(--vino));
-  position: relative;
 
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('img/telefono.png') center 75% / cover no-repeat;
+
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
- 
-/* Contenedor del texto */
-.hero-overlay {
-  text-align: center;
-  padding: 20px;
-}
-
-/* Título */
-.hero-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: white;
-  margin-bottom: 10px;
-}
-
-/* Subtítulo */
-.hero-subtitle {
-  font-family: 'Cinzel', serif;
-  font-size: 1.3rem;
-  color: #f5e6c8;
-  letter-spacing: 1px;
-  font-style: italic;
-}
-=======
+/* --- Contenido del hero --- */
 .hero-overlay {
   text-align: center;
   color: var(--crema);
+  padding: 20px;
 }
 
-.hero-title { font-size: 3rem; letter-spacing: 2px; }
+.hero-title { 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem; 
+  color: white;
+  letter-spacing: 2px; 
+}
 
 .hero-subtitle {
+  font-family: 'Cinzel', serif; /* 👈 esto te faltaba */
   font-size: 1.2rem;
-  color: var(--dorado);
+  color: #C9A45C;
   margin-top: 8px;
   font-style: italic;
 }
@@ -170,14 +174,21 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 8px;
 }
 
-.footer-contact { color: var(--dorado); font-size: 0.85rem; margin-bottom: 4px; }
-.footer-copy { font-size: 0.75rem; color: var(--gris); }
+.footer-contact { 
+  color: var(--dorado); 
+  font-size: 0.85rem; 
+  margin-bottom: 4px; 
+}
+
+.footer-copy { 
+  font-size: 0.75rem; 
+  color: var(--gris); 
+}
 
 /* FIN seccion de Chris */
 
 /* ============================================================
    INTEGRANTE 11: EDUARDO (Eduardo Villedas)
-   
    Tarea: Estilos del campo Telefono y animacion fadeInUp
           obligatoria para la rubrica.
    Commit: "style: agrega estilos campo telefono y animacion fade-in"
@@ -190,8 +201,14 @@ a { text-decoration: none; color: inherit; }
 
 /* --- ANIMACION fadeInUp (obligatoria para la rubrica) --- */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 .contacto-intro,
@@ -200,6 +217,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* FIN seccion de Eduardo */
+
 /* ============================================================
    INTEGRANTE 13: VICTOR (Victor Hernandez)
    Branch: Christian-Hernandez
