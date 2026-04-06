@@ -1,0 +1,38 @@
+/* --- HERO --- */
+.hero {
+  height: 60vh;
+  min-height: 400px;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('telefono.png') center 75% / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor del texto */
+.hero-overlay {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título */
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Subtítulo */
+.hero-subtitle {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  color: #f5e6c8;
+  letter-spacing: 1px;
+  font-style: italic;
+}
