@@ -77,11 +77,66 @@ document.addEventListener('DOMContentLoaded', function () {
 /* FIN seccion de Chris */
 
 
+/* ============================================================
+   INTEGRANTE 8: ALEX (Alejandro Gonzalez)
+   Branch: Christian-Hernandez
+   Tarea: Validacion del campo Nombre. Debe tener al menos
+          3 caracteres y solo letras y espacios.
+   Commit: "feat: agrega validacion del campo nombre"
+   ============================================================ */
+
+function validateNombre(value) {
+  var errorEl = document.getElementById('error-nombre');
+  var inputEl = document.getElementById('nombre');
+
+  if (value === '') {
+    showError(inputEl, errorEl, 'El nombre es obligatorio.');
+    return false;
+  }
+  if (value.length < 3) {
+    showError(inputEl, errorEl, 'El nombre debe tener al menos 3 caracteres.');
+    return false;
+  }
+  if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$/.test(value)) {
+    showError(inputEl, errorEl, 'El nombre solo puede contener letras y espacios.');
+    return false;
+  }
+  return true;
+}
+
+/* FIN seccion de Alex */
+
+
+/* ============================================================
+   INTEGRANTE 9: DANIEL (Daniel Aguilar)
+   Branch: Christian-Hernandez
+   Tarea: Validacion del campo Correo electronico con
+          expresion regular para formato valido.
+   Commit: "feat: agrega validacion del campo correo electronico"
+   ============================================================ */
+
+function validateEmail(value) {
+  var errorEl = document.getElementById('error-email');
+  var inputEl = document.getElementById('email');
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (value === '') {
+    showError(inputEl, errorEl, 'El correo electrónico es obligatorio.');
+    return false;
+  }
+  if (!emailRegex.test(value)) {
+    showError(inputEl, errorEl, 'Ingresa un correo electrónico válido.');
+    return false;
+  }
+  return true;
+}
+
+/* FIN seccion de Daniel */
 
 
 /* ============================================================
    INTEGRANTE 10: EDUARDO (Eduardo Villedas)
-   
+   Branch: Christian-Hernandez
    Tarea: Validacion del campo Telefono. Acepta numeros,
           espacios, parentesis y guiones. Minimo 10 digitos.
    Commit: "feat: agrega validacion del campo telefono"
@@ -108,6 +163,34 @@ function validateTelefono(value) {
 }
 
 /* FIN seccion de Eduardo */
+
+
+/* ============================================================
+   INTEGRANTE 11: ANGEL (Angel Juarez)
+   Branch: Christian-Hernandez
+   Tarea: Validacion del campo Mensaje. Debe tener al menos
+          10 caracteres para asegurar un mensaje con contenido.
+   Commit: "feat: agrega validacion del campo mensaje"
+   ============================================================ */
+
+function validateMensaje(value) {
+  var errorEl = document.getElementById('error-mensaje');
+  var inputEl = document.getElementById('mensaje');
+
+  if (value === '') {
+    showError(inputEl, errorEl, 'El mensaje es obligatorio.');
+    return false;
+  }
+  if (value.length < 10) {
+    showError(inputEl, errorEl, 'El mensaje debe tener al menos 10 caracteres.');
+    return false;
+  }
+  return true;
+}
+
+/* FIN seccion de Angel */
+
+
 /* ============================================================
    INTEGRANTE 12: VICTOR (Victor Hernandez)
    Branch: Christian-Hernandez

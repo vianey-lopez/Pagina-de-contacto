@@ -20,10 +20,10 @@
 }
 
 /* --- Reset --- */
-*, *::before, *::after { 
-  box-sizing: border-box; 
-  margin: 0; 
-  padding: 0; 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* --- Tipografia base --- */
@@ -34,13 +34,13 @@ body {
   line-height: 1.7;
 }
 
-h1, h2, h3, h4 { 
-  font-family: 'Playfair Display', serif; 
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
 }
 
-a { 
-  text-decoration: none; 
-  color: inherit; 
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* --- Container --- */
@@ -79,9 +79,9 @@ a {
 }
 
 /* --- Logo --- */
-.logo { 
-  height: 36px; 
-  border-radius: 4px; 
+.logo {
+  height: 36px;
+  border-radius: 4px;
 }
 
 /* --- Navegacion --- */
@@ -93,8 +93,8 @@ a {
 }
 
 .nav a:hover,
-.nav a.active { 
-  color: var(--dorado); 
+.nav a.active {
+  color: var(--dorado);
 }
 
 /* --- Hero con overlay oscuro --- */
@@ -105,7 +105,7 @@ a {
 
   background:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('telefono.png') center 75% / cover no-repeat;
+    url('img/telefono.png') center 75% / cover no-repeat;
 
   position: relative;
   display: flex;
@@ -120,9 +120,9 @@ a {
   padding: 20px;
 }
 
-.hero-title { 
-  font-size: 3rem; 
-  letter-spacing: 2px; 
+.hero-title {
+  font-size: 3rem;
+  letter-spacing: 2px;
 }
 
 .hero-subtitle {
@@ -155,21 +155,155 @@ a {
   margin-bottom: 8px;
 }
 
-.footer-contact { 
-  color: var(--dorado); 
-  font-size: 0.85rem; 
-  margin-bottom: 4px; 
+.footer-contact {
+  color: var(--dorado);
+  font-size: 0.85rem;
+  margin-bottom: 4px;
 }
 
-.footer-copy { 
-  font-size: 0.75rem; 
-  color: var(--gris); 
+.footer-copy {
+  font-size: 0.75rem;
+  color: var(--gris);
 }
 
 /* FIN seccion de Chris */
 
+
+/* ============================================================
+   INTEGRANTE 8: BRENDA (Brenda Villar)
+   Branch: Christian-Hernandez
+   Tarea: Estilos de la seccion introductoria de contacto,
+          titulo de seccion reutilizable con linea dorada
+          decorativa debajo.
+   Commit: "style: agrega estilos de intro contacto y titulo de seccion"
+   ============================================================ */
+
+/* --- Titulo de seccion reutilizable --- */
+.section-title {
+  font-size: 2rem;
+  color: var(--vino);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--dorado);
+  margin: 10px auto 0;
+}
+
+/* --- Intro contacto --- */
+.contacto-intro {
+  padding: 50px 0 10px;
+  background: var(--blanco);
+}
+
+.contacto-desc {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--gris);
+}
+
+/* FIN seccion de Brenda */
+
+
+/* ============================================================
+   INTEGRANTE 9: ALEX (Alejandro Gonzalez)
+   Branch: Christian-Hernandez
+   Tarea: Estilos del campo Nombre del formulario y estilos
+          base de form-group, labels e inputs reutilizables
+          para todos los campos.
+   Commit: "style: agrega estilos base de inputs y campo nombre"
+   ============================================================ */
+
+/* --- Seccion principal contacto --- */
+.contacto-main {
+  padding: 40px 0 60px;
+  background: var(--blanco);
+}
+
+/* --- Form group base --- */
+.contacto-form {
+  background: var(--crema);
+  padding: 36px;
+  border: 1px solid #e6e2de;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  color: var(--burdeos);
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.required { color: var(--vino); }
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d4cfc9;
+  background: var(--blanco);
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: var(--burdeos);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--dorado);
+  box-shadow: 0 0 0 3px rgba(201, 164, 92, 0.2);
+}
+
+/* --- Estado de error en inputs --- */
+.form-group input.input-error,
+.form-group textarea.input-error {
+  border-color: var(--vino);
+  box-shadow: 0 0 0 3px rgba(139, 58, 74, 0.15);
+}
+
+.error-msg {
+  display: block;
+  color: var(--vino);
+  font-size: 0.8rem;
+  margin-top: 4px;
+  min-height: 18px;
+}
+
+/* FIN seccion de Alex */
+
+
+/* ============================================================
+   INTEGRANTE 10: DANIEL (Daniel Aguilar)
+   Branch: Christian-Hernandez
+   Tarea: Estilos especificos del campo Correo electronico
+          (placeholder e icono visual con pseudo-elemento).
+   Commit: "style: agrega estilos del campo correo electronico"
+   ============================================================ */
+
+.form-group input[type="email"]::placeholder {
+  color: #b5afa8;
+  font-style: italic;
+}
+
+/* FIN seccion de Daniel */
+
+
 /* ============================================================
    INTEGRANTE 11: EDUARDO (Eduardo Villedas)
+   Branch: Christian-Hernandez
    Tarea: Estilos del campo Telefono y animacion fadeInUp
           obligatoria para la rubrica.
    Commit: "style: agrega estilos campo telefono y animacion fade-in"
@@ -182,13 +316,13 @@ a {
 
 /* --- ANIMACION fadeInUp (obligatoria para la rubrica) --- */
 @keyframes fadeInUp {
-  from { 
-    opacity: 0; 
-    transform: translateY(30px); 
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -198,6 +332,28 @@ a {
 }
 
 /* FIN seccion de Eduardo */
+
+
+/* ============================================================
+   INTEGRANTE 12: ANGEL (Angel Juarez)
+   Branch: Christian-Hernandez
+   Tarea: Estilos del campo Mensaje (textarea) con altura
+          minima y resize solo vertical.
+   Commit: "style: agrega estilos del campo mensaje (textarea)"
+   ============================================================ */
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group textarea::placeholder {
+  color: #b5afa8;
+  font-style: italic;
+}
+
+/* FIN seccion de Angel */
+
 
 /* ============================================================
    INTEGRANTE 13: VICTOR (Victor Hernandez)
@@ -244,6 +400,16 @@ a {
 .form-status.error { color: var(--vino); }
 
 /* FIN seccion de Victor */
+
+
+/* ============================================================
+   INTEGRANTE 14: VIANEY (Vianey Lopez)
+   Branch: Christian-Hernandez
+   Tarea: Estilos de la tarjeta de informacion de contacto
+          (correo, telefono, ubicacion, horario) y media
+          queries para tablet y movil.
+   Commit: "style: agrega info de contacto y media queries responsive"
+   ============================================================ */
 
 /* --- Tarjeta info de contacto --- */
 .contacto-info {
@@ -311,3 +477,26 @@ a {
 }
 
 /* FIN seccion de Vianey */
+
+
+/* ============================================================
+   INTEGRANTE 15: FER (Fernando Aquino)
+   Branch: Christian-Hernandez
+   Tarea: Estilos adicionales del hero de contacto (gradiente
+          como fondo en lugar de imagen, ya que esta pagina no
+          usa imagen de fondo).
+   Commit: "style: agrega gradiente hero para pagina de contacto"
+   ============================================================ */
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 50%, rgba(201, 164, 92, 0.15), transparent 60%);
+  pointer-events: none;
+}
+
+/* FIN seccion de Fer */
