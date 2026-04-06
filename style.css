@@ -68,6 +68,10 @@ a { text-decoration: none; color: inherit; }
   gap: 8px;
 }
 
+/* --- Logo --- */
+.logo { height: 36px; border-radius: 4px; }
+
+
 /* --- Navegacion --- */
 .nav a {
   color: var(--crema);
