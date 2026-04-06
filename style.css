@@ -136,3 +136,37 @@ a { text-decoration: none; color: inherit; }
 .footer-copy { font-size: 0.75rem; color: var(--gris); }
 
 /* FIN seccion de Chris */
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background: var(--vino);
+  color: var(--crema);
+  border: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 8px;
+}
+
+.btn-submit:hover {
+  background: var(--burdeos);
+  transform: translateY(-2px);
+}
+
+.btn-submit:disabled {
+  background: var(--gris);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-status {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  min-height: 20px;
+}
+
+.form-status.success { color: #2e7d32; }
+.form-status.error { color: var(--vino); }
