@@ -20,7 +20,11 @@
 }
 
 /* --- Reset --- */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
 
 /* --- Tipografia base --- */
 body {
@@ -30,8 +34,14 @@ body {
   line-height: 1.7;
 }
 
-h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
-a { text-decoration: none; color: inherit; }
+h1, h2, h3, h4 { 
+  font-family: 'Playfair Display', serif; 
+}
+
+a { 
+  text-decoration: none; 
+  color: inherit; 
+}
 
 /* --- Container --- */
 .container {
@@ -68,6 +78,12 @@ a { text-decoration: none; color: inherit; }
   gap: 8px;
 }
 
+/* --- Logo --- */
+.logo { 
+  height: 36px; 
+  border-radius: 4px; 
+}
+
 /* --- Navegacion --- */
 .nav a {
   color: var(--crema);
@@ -77,26 +93,37 @@ a { text-decoration: none; color: inherit; }
 }
 
 .nav a:hover,
-.nav a.active { color: var(--dorado); }
+.nav a.active { 
+  color: var(--dorado); 
+}
 
 /* --- Hero con overlay oscuro --- */
 .hero {
   margin-top: 60px;
   height: 40vh;
   min-height: 260px;
-  background: linear-gradient(135deg, var(--burdeos), var(--vino));
+
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('telefono.png') center 75% / cover no-repeat;
+
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* --- Contenido del hero --- */
 .hero-overlay {
   text-align: center;
   color: var(--crema);
+  padding: 20px;
 }
 
-.hero-title { font-size: 3rem; letter-spacing: 2px; }
+.hero-title { 
+  font-size: 3rem; 
+  letter-spacing: 2px; 
+}
 
 .hero-subtitle {
   font-size: 1.2rem;
@@ -128,7 +155,92 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 8px;
 }
 
-.footer-contact { color: var(--dorado); font-size: 0.85rem; margin-bottom: 4px; }
-.footer-copy { font-size: 0.75rem; color: var(--gris); }
+.footer-contact { 
+  color: var(--dorado); 
+  font-size: 0.85rem; 
+  margin-bottom: 4px; 
+}
+
+.footer-copy { 
+  font-size: 0.75rem; 
+  color: var(--gris); 
+}
 
 /* FIN seccion de Chris */
+
+/* ============================================================
+   INTEGRANTE 11: EDUARDO (Eduardo Villedas)
+   Tarea: Estilos del campo Telefono y animacion fadeInUp
+          obligatoria para la rubrica.
+   Commit: "style: agrega estilos campo telefono y animacion fade-in"
+   ============================================================ */
+
+.form-group input[type="tel"]::placeholder {
+  color: #b5afa8;
+  font-style: italic;
+}
+
+/* --- ANIMACION fadeInUp (obligatoria para la rubrica) --- */
+@keyframes fadeInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.contacto-intro,
+.contacto-main {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* FIN seccion de Eduardo */
+
+/* ============================================================
+   INTEGRANTE 13: VICTOR (Victor Hernandez)
+   Branch: Christian-Hernandez
+   Tarea: Estilos del boton Submit con efecto hover y estado
+          deshabilitado durante el envio. Mensaje de status
+          del formulario (exito/error).
+   Commit: "style: agrega estilos del boton submit y status del form"
+   ============================================================ */
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background: var(--vino);
+  color: var(--crema);
+  border: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 8px;
+}
+
+.btn-submit:hover {
+  background: var(--burdeos);
+  transform: translateY(-2px);
+}
+
+.btn-submit:disabled {
+  background: var(--gris);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-status {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  min-height: 20px;
+}
+
+.form-status.success { color: #2e7d32; }
+.form-status.error { color: var(--vino); }
+
+/* FIN seccion de Victor */

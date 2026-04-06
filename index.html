@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER - Vero -->
@@ -24,6 +25,15 @@
         </div>
     </header>
     <!-- FIN HEADER - Vero -->
+    <!-- HERO - Fer -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1 class="hero-title">HABLEMOS DE SABORES</h1>
+        <p class="hero-subtitle">Queremos escucharte</p>
+      </div>
+    </section>
+    <!-- FIN HERO - Fer -->
+    
 
     <script src="script.js"></script>
 
@@ -33,6 +43,16 @@
     <!-- FIN HERO - Fer -->
 
     <!-- INTRO CONTACTO - Brenda -->
+    <section class="contacto-intro">
+      <div class="container">
+        <h2 class="section-title">¿Tienes alguna pregunta?</h2>
+        <p class="contacto-desc">
+          Ya sea que quieras personalizar tu tabla de quesos, hacer un pedido
+          especial o simplemente saber más sobre nosotros, escríbenos y con
+          gusto te responderemos.
+        </p>
+      </div>
+    </section>     
     <!-- FIN INTRO CONTACTO - Brenda -->
 
     <!-- FORMULARIO + INFO - Chris -->
@@ -50,12 +70,24 @@
             <!-- FIN Campo Correo - Daniel -->
 
             <!-- Campo Telefono - Eduardo -->
+            <div class="form-group">
+              <label for="telefono">Teléfono <span class="required">*</span></label>
+              <input type="tel" id="telefono" name="telefono" placeholder="(555) 123 4567" autocomplete="tel">
+              <span class="error-msg" id="error-telefono"></span>
+            </div>
             <!-- FIN Campo Telefono - Eduardo -->
 
             <!-- Campo Mensaje - Angel -->
+            <div class="form-group">
+            <label for="mensaje">Mensaje <span class="required">*</span></label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <span class="error-msg" id="error-mensaje"></span>
+            </div>
             <!-- FIN Campo Mensaje - Angel -->
 
             <!-- Boton Submit - Victor -->
+            <button type="submit" class="btn-submit" id="btnSubmit">Enviar mensaje</button>
+            <p class="form-status" id="formStatus"></p>
             <!-- FIN Boton Submit - Victor -->
 
           </form>
@@ -119,5 +151,6 @@
   <!-- FIN FOOTER - Vero -->
 
   <script src="script.js"></script>
+
 </body>
 </html>
