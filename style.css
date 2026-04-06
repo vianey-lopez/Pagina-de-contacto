@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 /* --- HERO --- */
 .hero {
@@ -12,8 +13,8 @@
     }
 
 
-=======
->>>>>>> e5fd4dfd95635434f4928490864effe0501caae6
+
+
 /* ============================================================
    INTEGRANTE 7: CHRIS (Christian Escamilla)
    Branch: Christian-Hernandez
@@ -144,11 +145,16 @@ a {
 }
 
 .hero-subtitle {
+
   font-family: 'Cinzel', serif; /* 👈 esto te faltaba */
+
+  font-family: 'Cinzel', serif;
+
   font-size: 1.2rem;
   color: #C9A45C;
   margin-top: 8px;
-  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* --- Layout principal contacto (grid 2 columnas) --- */
