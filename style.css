@@ -402,15 +402,6 @@ a {
 /* FIN seccion de Victor */
 
 
-/* ============================================================
-   INTEGRANTE 14: VIANEY (Vianey Lopez)
-   Branch: Christian-Hernandez
-   Tarea: Estilos de la tarjeta de informacion de contacto
-          (correo, telefono, ubicacion, horario) y media
-          queries para tablet y movil.
-   Commit: "style: agrega info de contacto y media queries responsive"
-   ============================================================ */
-
 /* --- Tarjeta info de contacto --- */
 .contacto-info {
   background: var(--burdeos);
