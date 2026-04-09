@@ -64,8 +64,6 @@ Nombre-feature
 | Eduardo    | `eduardo-feature`             |
 | Vero       | `Vero-feature`                |
 | Victor     | `Victor-feature`              |
-|------------|-------------------------------|
-
 ---
 
 ## 4. Flujo de trabajo en Git
@@ -104,7 +102,7 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 
 ---
 
-## 6. Distribucion del trabajo (10 integrantes)
+## 5. Distribucion del trabajo (10 integrantes)
 
 ---
 
@@ -115,24 +113,35 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Footer
 - Envio Formspree
 - Readme
-**Rama:** `Vero-feature`
-**Archivos:** `index.html`, `styles.css` ,`script.js`,`Readme.md`
+**Rama:**
+- `Vero-feature`
+**Archivos:** 
+- `index.html`
+- `styles.css` 
+- `script.js`
+- `Readme.md`
 ---
 
 ### Integrante: FER (Fernando Aquino)
 **Realiza:** 
 - Seccion Hero
 - Efecto decorativo del hero
-**Rama:** `FerAO-Feature`
-**Archivos:** `index.html`,`styles.css`
+**Rama:**
+- `FerAO-Feature`
+**Archivos:** 
+- `index.html`
+- `styles.css`
 ---
 
 ### Integrante: BRENDA (Brenda Villar)
 **Realiza:** 
 - Introduccion de contacto
 - Titulo de seccion e intro
-**Rama:** `Brenda-feature`
-**Archivos:** `index.html`,`styles.css`
+**Rama:**
+- `Brenda-feature`
+**Archivos:** 
+- `index.html`
+- `styles.css`
 ---
 
 ### Integrante: CHRIS (Christian Escamilla)
@@ -140,8 +149,12 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Formulario principal
 - Layout, variables, reset, hero y layout
 - Funcion principal
-**Rama:** `Christian-feature`
-**Archivos:** `index.html`,`styles.css`,`script.js`
+**Rama:** 
+- `Christian-feature`
+**Archivos:** 
+- `index.html`
+- `styles.css` 
+- `script.js`
 ---
 
 ### Integrante: ALEX (Alejandro Gonzalez)
@@ -149,8 +162,12 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Campo Nombre
 - Estilos base de inputs
 - Validacion del campo Nombre
-**Rama:** `Alex-feature`
-**Archivos:** `index.html`,`styles.css`,`script.js`
+**Rama:** 
+- `Alex-feature`
+**Archivos:** 
+- `index.html`
+- `styles.css` 
+- `script.js`
 ---
 
 ### Integrante: DANIEL (Daniel Aguilar)
@@ -158,8 +175,12 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Campo Correo electronico 
 - Placeholder del campo email
 - Validacion del campo Correo
-**Rama:** `Daniel-feature`
-**Archivos:** `index.html`,`styles.css`,`script.js`
+**Rama:** 
+- `Daniel-feature`
+**Archivos:** 
+- `index.html`
+- `styles.css` 
+- `script.js`
 ---
 
 ### Integrante: EDUARDO (Eduardo Villedas)
@@ -167,8 +188,12 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Campo Telefono
 - Placeholder telefono y animacion
 - Validacion del campo Telefono
-**Rama:** `eduardo-feature`
-**Archivos:** `index.html`, `/styles.css`,`script.js`
+**Rama:** 
+- `eduardo-feature`
+**Archivos:** 
+- `index.html`
+- `styles.css` 
+- `script.js`
 ---
 
 ### Integrante: ANGEL (Angel Juarez)
@@ -176,8 +201,12 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Campo Mensaje 
 - Estilos del textarea
 - Validacion del campo Mensaje
-**Rama:** `Angel-feature`
-**Archivos:** `index.html` , `/styles.css`,`script.js`
+**Rama:** 
+- `Angel-feature`
+**Archivos:** 
+- `index.html`
+- `styles.css` 
+- `script.js`
 ---
 
 ### Integrante: VICTOR (Victor Hernandez)
@@ -185,19 +214,20 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Boton Submit
 - Status
 - Funciones auxiliares de error
-**Rama:** `Victor-feature`
-**Archivos:** `index.html`, `styles.css`,`script.js`
----
+**Rama:** 
+- `Victor-feature`
+**Archivos:** 
+- `index.html`
+- `styles.css` 
+- `script.js`---
 
 ### Integrante: VIANEY (Vianey Lopez)
 **Realiza:** 
 - Informacion de contacto
 - Responsive
-**Rama:** `vianey-feature`
-**Archivos:** `index.html`,`styles.css` 
+**Rama:** 
+- `vianey-feature`
+**Archivos:** 
+- `index.html`
+- `styles.css` 
 ---
-
-## 9. Link del repositorio
-```
-https://github.com/vianey-lopez/Pagina-de-contacto 
-```
