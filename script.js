@@ -217,3 +217,106 @@ function clearErrors() {
 }
 
 /* FIN seccion de Victor */
+
+
+/* ============================================================
+   FEATURE 3 - Christian: Validacion en tiempo real
+   Los campos se validan mientras el usuario escribe,
+   no solo al presionar Submit. Mejora la experiencia.
+   ============================================================ */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* --- Validacion en tiempo real al salir del campo - Christian --- */
+  var nombre = document.getElementById('nombre');
+  var email = document.getElementById('email');
+  var telefono = document.getElementById('telefono');
+  var mensaje = document.getElementById('mensaje');
+
+  nombre.addEventListener('blur', function () {
+    clearFieldError(nombre, document.getElementById('error-nombre'));
+    validateNombre(nombre.value.trim());
+  });
+
+  email.addEventListener('blur', function () {
+    clearFieldError(email, document.getElementById('error-email'));
+    validateEmail(email.value.trim());
+  });
+
+  telefono.addEventListener('blur', function () {
+    clearFieldError(telefono, document.getElementById('error-telefono'));
+    validateTelefono(telefono.value.trim());
+  });
+
+  mensaje.addEventListener('blur', function () {
+    clearFieldError(mensaje, document.getElementById('error-mensaje'));
+    validateMensaje(mensaje.value.trim());
+  });
+
+  /* --- Quitar error al empezar a escribir - Christian --- */
+  nombre.addEventListener('input', function () {
+    clearFieldError(nombre, document.getElementById('error-nombre'));
+  });
+  email.addEventListener('input', function () {
+    clearFieldError(email, document.getElementById('error-email'));
+  });
+  telefono.addEventListener('input', function () {
+    clearFieldError(telefono, document.getElementById('error-telefono'));
+  });
+  mensaje.addEventListener('input', function () {
+    clearFieldError(mensaje, document.getElementById('error-mensaje'));
+  });
+
+  /* --- Contador de caracteres en mensaje - Christian --- */
+  var contadorEl = document.createElement('span');
+  contadorEl.style.cssText = 'display:block;text-align:right;font-size:0.75rem;color:#b5afa8;margin-top:2px;';
+  contadorEl.textContent = '0 / 10 caracteres';
+  mensaje.parentNode.appendChild(contadorEl);
+
+  mensaje.addEventListener('input', function () {
+    var len = mensaje.value.length;
+    contadorEl.textContent = len + ' / 10 caracteres';
+    contadorEl.style.color = len >= 10 ? '#2e7d32' : '#b5afa8';
+  });
+});
+
+/* --- Limpiar error de un campo individual - Christian --- */
+function clearFieldError(inputEl, errorEl) {
+  inputEl.classList.remove('input-error');
+  errorEl.textContent = '';
+}
+
+/* FIN Feature 3 - Christian */
+
+
+/* ============================================================
+   FEATURE 4 - Christian: Mensaje de confirmacion mejorado
+   Muestra un mensaje animado de exito con icono y auto-oculta
+   despues de 5 segundos.
+   ============================================================ */
+
+document.addEventListener('DOMContentLoaded', function () {
+  var formStatus = document.getElementById('formStatus');
+
+  /* Observar cambios en el mensaje de status - Christian */
+  var observer = new MutationObserver(function () {
+    if (formStatus.classList.contains('success')) {
+      formStatus.textContent = '\u2705 \u00A1Mensaje enviado con \u00E9xito! Te responderemos pronto.';
+
+      /* Auto-ocultar despues de 5 segundos - Christian */
+      setTimeout(function () {
+        formStatus.style.transition = 'opacity 0.5s ease';
+        formStatus.style.opacity = '0';
+        setTimeout(function () {
+          formStatus.textContent = '';
+          formStatus.className = 'form-status';
+          formStatus.style.opacity = '1';
+        }, 500);
+      }, 5000);
+    }
+  });
+
+  observer.observe(formStatus, { attributes: true, attributeFilter: ['class'] });
+});
+
+/* FIN Feature 4 - Christian */
