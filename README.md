@@ -237,7 +237,8 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 **Archivos:** 
 - `index.html`
 - `styles.css` 
-- `script.js`---
+- `script.js`
+---
 
 ### Integrante: VIANEY (Vianey Lopez)
 **Realiza:** 
