@@ -500,3 +500,99 @@ a {
 }
 
 /* FIN seccion de Fer */
+
+
+/* ============================================================
+   FEATURE 1 - Christian: Animaciones en campos del formulario
+   Transiciones suaves al hacer focus, hover y estados activos.
+   ============================================================ */
+
+.form-group input:hover,
+.form-group textarea:hover {
+  border-color: var(--vino);
+  transition: border-color 0.2s ease;
+}
+
+.form-group:focus-within label {
+  color: var(--dorado);
+  transition: color 0.3s ease;
+}
+
+.btn-submit:hover {
+  box-shadow: 0 4px 15px rgba(139, 58, 74, 0.3);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* FIN Feature 1 - Christian */
+
+
+/* ============================================================
+   FEATURE 2 - Christian: Mejora de responsividad movil
+   Inputs mas grandes para touch y ajustes en pantallas chicas.
+   ============================================================ */
+
+@media (max-width: 480px) {
+  .form-group input,
+  .form-group textarea {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+  .btn-submit {
+    padding: 16px;
+    font-size: 1.1rem;
+  }
+  .contacto-desc {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-title { font-size: 1.2rem; }
+  .section-title { font-size: 1.3rem; }
+  .brand { font-size: 1rem; }
+  .nav a { font-size: 0.75rem; margin-left: 8px; }
+}
+
+/* FIN Feature 2 - Christian */
+
+
+/* ============================================================
+   FEATURE 4 - Christian: Mensaje de confirmacion animado
+   Estilos para el mensaje de exito/error con animacion.
+   ============================================================ */
+
+.form-status.success {
+  background: #e8f5e9;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  animation: fadeInUp 0.4s ease;
+}
+
+.form-status.error {
+  background: #fce4ec;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #f48fb1;
+  animation: fadeInUp 0.4s ease;
+}
+
+.form-group input.input-error,
+.form-group textarea.input-error {
+  animation: shakeError 0.4s ease;
+}
+
+@keyframes shakeError {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+/* FIN Feature 4 - Christian */
