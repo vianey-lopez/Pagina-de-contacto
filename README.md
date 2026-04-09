@@ -113,8 +113,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Footer
 - Envio Formspree
 - Readme
+
 **Rama:**
 - `Vero-feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css` 
@@ -126,8 +128,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 **Realiza:** 
 - Seccion Hero
 - Efecto decorativo del hero
+
 **Rama:**
 - `FerAO-Feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css`
@@ -137,8 +141,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 **Realiza:** 
 - Introduccion de contacto
 - Titulo de seccion e intro
+
 **Rama:**
 - `Brenda-feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css`
@@ -149,8 +155,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Formulario principal
 - Layout, variables, reset, hero y layout
 - Funcion principal
+
 **Rama:** 
 - `Christian-feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css` 
@@ -162,8 +170,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Campo Nombre
 - Estilos base de inputs
 - Validacion del campo Nombre
+
 **Rama:** 
 - `Alex-feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css` 
@@ -175,8 +185,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Campo Correo electronico 
 - Placeholder del campo email
 - Validacion del campo Correo
+
 **Rama:** 
 - `Daniel-feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css` 
@@ -188,8 +200,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Campo Telefono
 - Placeholder telefono y animacion
 - Validacion del campo Telefono
+
 **Rama:** 
 - `eduardo-feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css` 
@@ -201,8 +215,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Campo Mensaje 
 - Estilos del textarea
 - Validacion del campo Mensaje
+
 **Rama:** 
 - `Angel-feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css` 
@@ -214,8 +230,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 - Boton Submit
 - Status
 - Funciones auxiliares de error
+
 **Rama:** 
 - `Victor-feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css` 
@@ -225,8 +243,10 @@ Ve a GitHub > Pull requests > "New Pull Request" > base: main - compare: TU-NOMB
 **Realiza:** 
 - Informacion de contacto
 - Responsive
+
 **Rama:** 
 - `vianey-feature`
+
 **Archivos:** 
 - `index.html`
 - `styles.css` 
